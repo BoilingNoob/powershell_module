@@ -2,5 +2,6 @@ Clear-Host
 Import-Module .\myModule.ps1
 Clear-Host
 
-get-unixTime
-convert-fromUnixTime
+$hold = get-unixTime
+$hold
+$hold|convert-fromUnixTime
