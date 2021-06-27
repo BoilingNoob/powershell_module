@@ -1,4 +1,3 @@
-Clear-Host
 function get-unixTime(){
     param(
         [parameter(ValueFromPipeline = $true)]$date = $null
@@ -19,5 +18,5 @@ function convert-fromUnixTime(){
     return $date.LocalDateTime
 }
 
-Export-ModuleMember get-unixTime
-Export-ModuleMember convert-fromUnixTime
+Export-ModuleMember -function get-unixTime
+Export-ModuleMember -function convert-fromUnixTime
